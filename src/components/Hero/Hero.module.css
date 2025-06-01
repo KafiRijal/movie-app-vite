@@ -28,6 +28,7 @@
 .hero__description {
   color: #64748b;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .hero__button {
@@ -42,6 +43,7 @@
   max-width: 100%;
   height: auto;
   border-radius: 25px;
+  margin-left: 50px;
 }
 
 /* Medium Screen */
@@ -68,10 +70,10 @@
   }
 
   .hero__left {
-    flex-basis: 40%;
+    flex-basis: 60%;
   }
 
   .hero__right {
-    flex-basis: 60%;
+    flex-basis: 40%;
   }
 }

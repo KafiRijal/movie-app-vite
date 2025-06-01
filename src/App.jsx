@@ -5,6 +5,7 @@ import PopularMovie from "./pages/Popular";
 import NowPlayingMovie from "./pages/NowPlaying";
 import TopRatedMovie from "./pages/TopRated";
 import Layout from "./Layout/Index";
+import Counter from "./components/Counter/Counter";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/movie/popular" element={<PopularMovie />}></Route>
           <Route path="/movie/now" element={<NowPlayingMovie />}></Route>
           <Route path="/movie/top" element={<TopRatedMovie />}></Route>
+          <Route path="/counter" element={<Counter />}></Route>
         </Routes>
       </Layout>
     </>
