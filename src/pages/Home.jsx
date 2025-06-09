@@ -11,14 +11,14 @@ function Home() {
       <div>
         <main>
           <Hero />
-          <Button variant="primary" size="sm">
+          {/* <Button variant="primary" size="sm">
             {" "}
             Lihat{" "}
           </Button>
           <Button variant="secondary" size="lg" full>
             {" "}
             Lihat{" "}
-          </Button>
+          </Button> */}
           <Movies movies={movies} setMovies={setMovies} />
           <AddMovieForm movies={movies} setMovies={setMovies} />
         </main>
