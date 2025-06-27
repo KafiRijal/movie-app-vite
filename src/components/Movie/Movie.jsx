@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyleMovie = styled.div`
   margin-bottom: 1rem;
@@ -33,7 +34,9 @@ function Movie(props) {
   return (
     <StyleMovie>
       <img src={movie.poster || tmdbImage} alt={movie.title} />
-      <h3>{movie.title}</h3>
+      <Link to={`/movie/${movie.id}`}>
+        <h3>{movie.title}</h3>
+      </Link>
       <p>{year}</p>
     </StyleMovie>
   );

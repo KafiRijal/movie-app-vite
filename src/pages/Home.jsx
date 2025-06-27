@@ -1,11 +1,12 @@
 import Hero from "../components/Hero/Hero";
 import Movies from "../components/Movies/Movies";
-import { useState } from "react";
+// import { useState } from "react";
 import AddMovieForm from "../components/AddMovie/AddMovie";
-import data from "../utils/constants/data";
+// import data from "../utils/constants/data";
 import Button from "../components/UI/Button/Index";
 function Home() {
-  const [movies, setMovies] = useState(data);
+  // const [movies, setMovies] = useState(data);
+  // const [movies] = useState(data);
   return (
     <>
       <div>
@@ -19,8 +20,9 @@ function Home() {
             {" "}
             Lihat{" "}
           </Button> */}
-          <Movies movies={movies} setMovies={setMovies} />
-          <AddMovieForm movies={movies} setMovies={setMovies} />
+          {/* <Movies movies={movies} setMovies={setMovies} /> */}
+          <Movies />
+          {/* <AddMovieForm movies={movies} setMovies={setMovies} /> */}
         </main>
       </div>
     </>
